@@ -1,0 +1,179 @@
+
+
+
+#body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./img/calculate4.jpeg);  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 3em;
+  color: green;
+  margin-top: -0.5em;
+  text-decoration:  firebrick;
+  text-align: center;
+}
+
+
+
+.calculator {
+  border-radius: 1em;
+  height: 60px;
+  width: 70px;
+  margin: auto;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  
+
+}
+
+.display-box {
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  height: 70px;
+  width: 100%;
+  height: 60px;
+  width: 350px;
+  text-align: right;
+  padding: 20px;
+  font-size: 26px;
+
+}
+
+.buttons {
+  margin-top: 5%;
+  color: white;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+
+}
+
+.number {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0ca022;
+  color: white;
+  border-radius: 40px;
+  font-size: larger;
+  height: 30%;
+  height: 60px;
+  width: 100px;
+}
+.operator {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #2f0dd9;
+  color: white;
+  border-radius: 40px;
+  font-size: larger;
+  height: 70%;
+  height: 70px;
+  width: 100px;
+}
+
+
+
+.zero {
+  grid-column: 1;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0ca022;
+  color: white;
+  border-radius: 40px;
+  font-size: larger;
+  height: 70%;
+  height: 70px;
+  width: 100px;
+
+}
+.clear {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #2f0dd9;
+  color: white;
+  border-radius: 40px;
+  font-size: larger;
+  height: 70%;
+  height: 70px;
+  width: 100px;
+
+}
+.equal {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #2f0dd9;
+  color: white;
+  border-radius: 40px;
+  font-size: larger;
+  height: 70%;
+  height: 70px;
+  width: 100px;
+
+}
+
+.number:active {
+  box-shadow: inset 5px 5px 5px black;
+  text-shadow: 5px 1px 1px white;
+  color: transparent;
+}
+.operator:active {
+  box-shadow: inset 5px 5px 5px black;
+  text-shadow: 5px 1px 1px white;
+  color: transparent;
+}
+.clear:active {
+  box-shadow: inset 5px 5px 5px black;
+  text-shadow: 5px 1px 1px white;
+  color: transparent;
+}
+.equal:active {
+  box-shadow: inset 5px 5px 5px black;
+  text-shadow: 5px 1px 1px white;
+  color: transparent;
+}
+
+
+
+/* History */
+.history {
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  min-height: 320px;
+  max-height: 320px;
+  width: 300px;
+  height: 400px;
+
+}
+
+.result {
+  border: 2px solid black;
+}
+
+.result-list {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.result-list li {
+  position: relative;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: green;
+  border-radius: 50px;
+  text-align: left;
+}
+
+li .deleteHistory {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 200px;
+  background-color: rgb(240, 228, 11);
+  color: black;
+  transition: all 0.2s ease 0s;
+}
